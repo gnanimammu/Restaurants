@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @measured_ingredient %>
+
+<div>
+  <%= link_to "Edit this measured ingredient", edit_measured_ingredient_path(@measured_ingredient) %> |
+  <%= link_to "Back to measured ingredients", measured_ingredients_path %>
+
+  <%= button_to "Destroy this measured ingredient", @measured_ingredient, method: :delete %>
+</div>

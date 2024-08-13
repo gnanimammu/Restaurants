@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Measured ingredients</h1>
+
+<div id="measured_ingredients">
+  <% @measured_ingredients.each do |measured_ingredient| %>
+    <%= render measured_ingredient %>
+    <p>
+      <%= link_to "Show this measured ingredient", measured_ingredient %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New measured ingredient", new_measured_ingredient_path %>
